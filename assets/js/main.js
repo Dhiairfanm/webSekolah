@@ -654,7 +654,7 @@ async function sendMessageToAI() {
   const payload = {
     contents: chatHistory
   };
-  const apiKey = ""; // If you want to use models other than gemini-2.0-flash or imagen-3.0-generate-002, provide an API key here. Otherwise, leave this as-is.
+  const apiKey = "AIzaSyB3-Nb-kQzw8qbqCmZgdJ_6XeUVt7aeulk"; // If you want to use models other than gemini-2.0-flash or imagen-3.0-generate-002, provide an API key here. Otherwise, leave this as-is.
   const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
   try {
