@@ -614,3 +614,97 @@ categoryFilter.addEventListener('click', (event) => {
 
 // Initial render of news when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', renderNews);
+
+const chatAiButton = document.getElementById('chat-ai-button');
+const chatAiModal = document.getElementById('chat-ai-modal');
+const closeChatAiModalButton = document.getElementById('close-chat-ai-modal');
+const chatAiMessages = document.getElementById('chat-ai-messages');
+const chatAiInput = document.getElementById('chat-ai-input');
+const chatAiSendButton = document.getElementById('chat-ai-send-button');
+const chatAiLoading = document.getElementById('chat-ai-loading');
+
+let chatHistory = []; // To store the conversation history
+
+// Function to add a message to the chat display
+function addChatMessage(sender, message) {
+  const messageDiv = document.createElement('div');
+  messageDiv.className = `d-flex mb-2 ${sender === 'user' ? 'justify-content-end' : 'justify-content-start'}`;
+  messageDiv.innerHTML = `<div class="p-2 rounded ${sender === 'user' ? 'bg-primary text-white' : 'bg-light text-dark'}">${message}</div>`;
+  chatAiMessages.appendChild(messageDiv);
+  chatAiMessages.scrollTop = chatAiMessages.scrollHeight; // Scroll to bottom
+}
+
+// Function to send message to AI
+async function sendMessageToAI() {
+  const userMessage = chatAiInput.value.trim();
+  if (userMessage === '') return;
+
+  addChatMessage('user', userMessage);
+  chatAiInput.value = ''; // Clear input
+
+  chatAiLoading.classList.remove('hidden'); // Show loading indicator
+
+  chatHistory.push({
+    role: "user",
+    parts: [{
+      text: userMessage
+    }]
+  });
+
+  const payload = {
+    contents: chatHistory
+  };
+  const apiKey = ""; // If you want to use models other than gemini-2.0-flash or imagen-3.0-generate-002, provide an API key here. Otherwise, leave this as-is.
+  const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+  try {
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    });
+    const result = await response.json();
+
+    chatAiLoading.classList.add('hidden'); // Hide loading indicator
+
+    if (result.candidates && result.candidates.length > 0 &&
+      result.candidates[0].content && result.candidates[0].content.parts &&
+      result.candidates[0].content.parts.length > 0) {
+      const aiResponse = result.candidates[0].content.parts[0].text;
+      addChatMessage('ai', aiResponse);
+      chatHistory.push({
+        role: "model",
+        parts: [{
+          text: aiResponse
+        }]
+      });
+    } else {
+      addChatMessage('ai', 'Maaf, saya tidak dapat memahami pertanyaan Anda. Bisakah Anda mengulanginya?');
+      console.error('Unexpected AI response structure:', result);
+    }
+  } catch (error) {
+    chatAiLoading.classList.add('hidden'); // Hide loading indicator
+    addChatMessage('ai', 'Maaf, terjadi kesalahan saat berkomunikasi dengan AI. Silakan coba lagi nanti.');
+    console.error('Error fetching AI response:', error);
+  }
+}
+
+// Event listeners for AI Chatbot
+chatAiButton.addEventListener('click', () => {
+  chatAiModal.style.display = 'flex'; // Show the chat modal
+  chatAiInput.focus(); // Focus on the input field
+});
+
+closeChatAiModalButton.addEventListener('click', () => {
+  chatAiModal.style.display = 'none'; // Hide the chat modal
+});
+
+chatAiSendButton.addEventListener('click', sendMessageToAI);
+
+chatAiInput.addEventListener('keypress', (event) => {
+  if (event.key === 'Enter') {
+    sendMessageToAI();
+  }
+});

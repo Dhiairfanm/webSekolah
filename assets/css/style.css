@@ -2809,3 +2809,115 @@ aside div {
 #newsCarousel .carousel-caption p {
   font-size: 1rem;
 }
+
+/* Responsive adjustments for carousel caption */
+@media (max-width: 767.98px) {
+  #newsCarousel .carousel-caption {
+    padding: 0.5rem;
+    width: 95%;
+    font-size: 0.8rem;
+  }
+
+  #newsCarousel .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  #newsCarousel .carousel-caption p {
+    font-size: 0.8rem;
+  }
+
+  #newsCarousel .carousel-item img {
+    height: 250px;
+    /* Shorter height on mobile */
+  }
+}
+
+/* AI Chat specific styling */
+#chat-ai-modal {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.75rem;
+  display: flex;
+  /* Use flexbox for internal layout */
+  flex-direction: column;
+  /* Stack header, body, footer vertically */
+  right: 20px;
+  /* Position to the right */
+  left: auto;
+  /* Remove left property */
+}
+
+#chat-ai-messages {
+  flex-grow: 1;
+  /* Allow messages area to take available space */
+  padding: 1rem;
+  background-color: #f0f2f5;
+  /* Light background for chat area */
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+
+#chat-ai-messages>div {
+  max-width: 80%;
+  /* Limit message bubble width */
+}
+
+#chat-ai-messages .justify-content-end>div {
+  background-color: #007bff;
+  /* Primary color for user messages */
+  color: white;
+  border-radius: 0.75rem 0.75rem 0.25rem 0.75rem;
+  /* Rounded corners for user bubble */
+}
+
+#chat-ai-messages .justify-content-start>div {
+  background-color: #e9ecef;
+  /* Light gray for AI messages */
+  color: #343a40;
+  border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
+  /* Rounded corners for AI bubble */
+}
+
+#chat-ai-button {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: all 0.3s ease;
+  /* Position to the right */
+  left: auto;
+  /* Remove left property */
+}
+
+#chat-ai-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments for chat modal */
+@media (max-width: 575.98px) {
+
+  /* For small devices (phones) */
+  #chat-ai-modal {
+    width: 90%;
+    left: 5%;
+    /* Keep it centered or adjust as needed for mobile */
+    right: auto;
+    /* Remove right property for small screens */
+    bottom: 80px;
+    height: 80vh;
+    /* Make it taller on small screens */
+  }
+
+  #chat-ai-button {
+    bottom: 15px;
+    right: 15px;
+    /* Position to the right */
+    left: auto;
+    /* Remove left property for small screens */
+    width: 50px;
+    height: 50px;
+  }
+
+  #chat-ai-button i {
+    font-size: 1.5rem !important;
+  }
+}
