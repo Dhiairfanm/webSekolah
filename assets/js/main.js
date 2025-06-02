@@ -404,6 +404,34 @@ const newsData = [{
     snippet: "Program 'Jumat Bersih' kembali dilaksanakan untuk menjaga kebersihan dan kenyamanan lingkungan sekolah.",
     content: "Dalam upaya menjaga kebersihan dan menciptakan lingkungan belajar yang nyaman, SMPN 264 Jakarta secara rutin menggelar program 'Jumat Bersih'. Seluruh siswa, guru, dan staf berpartisipasi aktif dalam membersihkan area sekolah. Kegiatan ini tidak hanya bertujuan untuk kebersihan, tetapi juga untuk menumbuhkan rasa tanggung jawab dan kebersamaan di antara warga sekolah. Mari kita jaga kebersihan sekolah kita bersama!",
     comments: []
+  },
+  {
+    id: 11,
+    title: "Pembukaan Kelas Coding untuk Siswa",
+    category: "Akademik",
+    date: "2025-05-20", // Most recent
+    image: "https://placehold.co/1200x400/AEC6CF/000000?text=Kelas+Coding",
+    snippet: "SMPN 264 Jakarta meluncurkan kelas coding baru untuk mempersiapkan siswa menghadapi era digital.",
+    content: "Merespon perkembangan teknologi yang pesat, SMPN 264 Jakarta dengan bangga membuka kelas coding bagi siswa-siswi. Program ini akan memperkenalkan dasar-dasar pemrograman, logika komputasi, dan pengembangan aplikasi sederhana. Diharapkan, kelas ini dapat membekali siswa dengan keterampilan digital yang relevan dan menumbuhkan minat mereka di bidang teknologi informasi.",
+    comments: []
+  }, {
+    id: 12,
+    title: "Festival Seni dan Budaya Sekolah",
+    category: "Kegiatan",
+    date: "2025-05-15", // Second most recent
+    image: "https://placehold.co/1200x400/FFDAB9/000000?text=Festival+Seni",
+    snippet: "Festival Seni dan Budaya tahunan SMPN 264 Jakarta sukses digelar dengan berbagai penampilan menarik.",
+    content: "SMPN 264 Jakarta kembali menggelar Festival Seni dan Budaya yang meriah. Acara ini menampilkan beragam bakat siswa dalam seni tari, musik, teater, dan pameran karya seni rupa. Festival ini bertujuan untuk mengembangkan kreativitas siswa dan melestarikan budaya lokal. Antusiasme penonton sangat tinggi, menunjukkan dukungan penuh terhadap kegiatan positif ini.",
+    comments: []
+  }, {
+    id: 13,
+    title: "Pengumuman Hasil Ujian Nasional",
+    category: "Pengumuman",
+    date: "2025-05-10", // Third most recent
+    image: "https://placehold.co/1200x400/D8BFD8/000000?text=Hasil+Ujian",
+    snippet: "Hasil Ujian Nasional untuk siswa kelas 9 telah diumumkan. Selamat kepada para siswa yang telah lulus!",
+    content: "Dengan ini diumumkan bahwa hasil Ujian Nasional untuk siswa kelas 9 SMPN 264 Jakarta telah tersedia. Para siswa dapat melihat hasilnya melalui portal sekolah atau datang langsung ke sekolah. Kami mengucapkan selamat kepada seluruh siswa yang telah berhasil menyelesaikan pendidikan di jenjang SMP. Semoga sukses dalam melanjutkan pendidikan ke jenjang yang lebih tinggi.",
+    comments: []
   }
 ];
 
