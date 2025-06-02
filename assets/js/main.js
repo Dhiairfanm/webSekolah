@@ -1,9 +1,3 @@
-/**
- * Template Name: BizLand - v3.7.0
- * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
 (function () {
   "use strict";
 
@@ -122,6 +116,8 @@
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
+
+
 
   /**
    * Mobile nav dropdowns activate
@@ -280,3 +276,313 @@
     })
   });
 })()
+
+// Mock News Data (replace with actual data from a backend or API)
+// Each news item now includes a 'comments' array
+const newsData = [{
+    id: 1,
+    title: "Pendaftaran Siswa Baru Tahun Ajaran 2024/2025 Dibuka!",
+    category: "Pengumuman",
+    date: "2024-05-30",
+    image: "https://placehold.co/600x400/ADD8E6/000000?text=Pendaftaran",
+    snippet: "SMPN 264 Jakarta dengan bangga mengumumkan pembukaan pendaftaran siswa baru untuk tahun ajaran 2024/2025. Segera daftarkan putra-putri Anda!",
+    content: "Pendaftaran siswa baru di SMPN 264 Jakarta untuk tahun ajaran 2024/2025 telah resmi dibuka. Kami mengundang calon siswa dan orang tua untuk mengunjungi situs web sekolah kami atau datang langsung ke sekretariat pendaftaran. Berbagai program unggulan dan fasilitas modern siap mendukung perkembangan akademik dan non-akademik siswa. Jangan lewatkan kesempatan ini untuk bergabung dengan keluarga besar SMPN 264 Jakarta! Detail lengkap mengenai persyaratan dan jadwal dapat ditemukan di halaman PSB kami.",
+    comments: [{
+        name: "Budi Santoso",
+        text: "Berita yang sangat informatif! Terima kasih.",
+        date: "2024-06-01T10:00:00Z"
+      },
+      {
+        name: "Siti Aminah",
+        text: "Semoga pendaftaran berjalan lancar.",
+        date: "2024-06-01T11:30:00Z"
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "Perlombaan Sains Tingkat Kota Berlangsung Sukses",
+    category: "Prestasi",
+    date: "2024-05-28",
+    image: "https://placehold.co/600x400/90EE90/000000?text=Sains",
+    snippet: "Siswa-siswi SMPN 264 Jakarta menunjukkan performa luar biasa dalam perlombaan sains tingkat kota, meraih beberapa penghargaan.",
+    content: "Perlombaan Sains Tingkat Kota yang diadakan minggu lalu menjadi ajang pembuktian bagi bakat-bakat muda dari SMPN 264 Jakarta. Tim perwakilan sekolah berhasil meraih juara 1 dalam kategori Fisika dan juara 3 dalam kategori Biologi. Prestasi ini merupakan hasil kerja keras dan dedikasi siswa serta bimbingan dari guru-guru pembimbing. Selamat kepada para pemenang! Kami berharap mereka dapat terus menginspirasi siswa lain.",
+    comments: [{
+      name: "Guru Pembimbing",
+      text: "Bangga sekali dengan pencapaian anak-anak!",
+      date: "2024-06-01T14:00:00Z"
+    }]
+  },
+  {
+    id: 3,
+    title: "Kegiatan Ekstrakurikuler Baru: Klub Robotika",
+    category: "Kegiatan",
+    date: "2024-05-25",
+    image: "https://placehold.co/600x400/FFD700/000000?text=Robotika",
+    snippet: "SMPN 264 Jakarta meluncurkan klub robotika baru untuk mengembangkan minat siswa dalam teknologi dan rekayasa.",
+    content: "Untuk memperkaya pengalaman belajar siswa, SMPN 264 Jakarta kini resmi meluncurkan klub robotika. Klub ini akan menjadi wadah bagi siswa yang tertarik pada dunia teknologi, pemrograman, dan rekayasa. Dengan bimbingan dari instruktur ahli, siswa akan belajar merancang, membangun, dan memprogram robot. Mari bergabung dan wujudkan ide-ide inovatif Anda! Pendaftaran dibuka setiap hari kerja.",
+    comments: []
+  },
+  {
+    id: 4,
+    title: "Workshop Penulisan Kreatif untuk Siswa Kelas 9",
+    category: "Akademik",
+    date: "2024-05-20",
+    image: "https://placehold.co/600x400/FFB6C1/000000?text=Menulis",
+    snippet: "Workshop intensif diadakan untuk meningkatkan kemampuan menulis kreatif siswa kelas 9, persiapan menghadapi ujian.",
+    content: "Dalam rangka mempersiapkan siswa kelas 9 menghadapi ujian akhir dan mengembangkan potensi menulis mereka, SMPN 264 Jakarta menyelenggarakan workshop penulisan kreatif. Workshop ini menghadirkan penulis profesional yang berbagi tips dan teknik menulis efektif. Diharapkan, kegiatan ini dapat memotivasi siswa untuk lebih mencintai dunia literasi dan meningkatkan nilai ujian mereka.",
+    comments: [{
+      name: "Orang Tua Siswa",
+      text: "Acara yang sangat bermanfaat untuk anak-anak.",
+      date: "2024-05-21T09:00:00Z"
+    }]
+  },
+  {
+    id: 5,
+    title: "Pengumuman Libur Hari Raya Idul Adha",
+    category: "Pengumuman",
+    date: "2024-06-10",
+    image: "https://placehold.co/600x400/DDA0DD/000000?text=Libur",
+    snippet: "Sekolah akan diliburkan pada tanggal 17-18 Juni 2024 dalam rangka Hari Raya Idul Adha.",
+    content: "Diberitahukan kepada seluruh siswa, guru, dan staf SMPN 264 Jakarta bahwa kegiatan belajar mengajar akan diliburkan pada tanggal 17 dan 18 Juni 2024 dalam rangka memperingati Hari Raya Idul Adha 1445 H. Kegiatan sekolah akan kembali normal pada tanggal 19 Juni 2024. Selamat merayakan Idul Adha bagi yang merayakan. Mohon diperhatikan jadwal ini.",
+    comments: []
+  },
+  {
+    id: 6,
+    title: "Tim Basket Putri Meraih Juara 2 di Turnamen Antar Sekolah",
+    category: "Prestasi",
+    date: "2024-05-15",
+    image: "https://placehold.co/600x400/B0C4DE/000000?text=Basket",
+    snippet: "Tim basket putri SMPN 264 Jakarta menunjukkan semangat juang tinggi dan berhasil meraih posisi kedua.",
+    content: "Tim basket putri SMPN 264 Jakarta kembali menorehkan prestasi gemilang dengan meraih juara 2 dalam Turnamen Basket Antar Sekolah se-Jakarta Selatan. Pertandingan final yang sengit menunjukkan kegigihan dan kerja sama tim yang solid. Kami bangga dengan pencapaian ini dan berharap dapat terus meningkatkan prestasi di masa mendatang. Dukungan dari seluruh warga sekolah sangat berarti.",
+    comments: [{
+      name: "Pelatih Basket",
+      text: "Luar biasa! Terus berlatih dan raih juara 1!",
+      date: "2024-05-16T18:00:00Z"
+    }]
+  },
+  {
+    id: 7,
+    title: "Kunjungan Edukasi ke Museum Nasional",
+    category: "Kegiatan",
+    date: "2024-05-10",
+    image: "https://placehold.co/600x400/C0C0C0/000000?text=Museum",
+    snippet: "Siswa kelas 7 dan 8 melakukan kunjungan edukasi ke Museum Nasional untuk memperkaya pengetahuan sejarah dan budaya.",
+    content: "Sebagai bagian dari program pembelajaran interaktif, siswa kelas 7 dan 8 SMPN 264 Jakarta baru-baru ini mengunjungi Museum Nasional. Kunjungan ini bertujuan untuk memberikan pengalaman belajar langsung tentang sejarah, seni, dan budaya Indonesia. Para siswa sangat antusias mengikuti tur dan sesi diskusi yang diadakan. Kegiatan ini diharapkan dapat menumbuhkan rasa cinta tanah air dan wawasan yang lebih luas.",
+    comments: []
+  },
+  {
+    id: 8,
+    title: "Jadwal Ujian Akhir Semester Genap",
+    category: "Akademik",
+    date: "2024-06-05",
+    image: "https://placehold.co/600x400/FFDAB9/000000?text=Ujian",
+    snippet: "Informasi lengkap mengenai jadwal Ujian Akhir Semester (UAS) Genap untuk semua tingkatan kelas.",
+    content: "Diberitahukan kepada seluruh siswa SMPN 264 Jakarta, jadwal Ujian Akhir Semester (UAS) Genap telah dirilis. Ujian akan dilaksanakan mulai tanggal 24 Juni hingga 28 Juni 2024. Mohon persiapkan diri dengan baik dan pastikan untuk memeriksa jadwal yang telah ditempel di papan pengumuman sekolah atau diakses melalui portal siswa. Selamat belajar dan semoga sukses!",
+    comments: []
+  },
+  {
+    id: 9,
+    title: "Perayaan Hari Guru Nasional di SMPN 264 Jakarta",
+    category: "Kegiatan",
+    date: "2024-11-25",
+    image: "assets/img/berita/berita-2.jpeg",
+    snippet: "SMPN 264 Jakarta merayakan Hari Guru Nasional dengan berbagai kegiatan dan apresiasi untuk para pahlawan tanpa tanda jasa.",
+    content: "Pada tanggal 25 November, seluruh warga SMPN 264 Jakarta dengan penuh suka cita merayakan Hari Guru Nasional. Berbagai acara seperti upacara bendera, penampilan seni dari siswa, dan pemberian penghargaan kepada guru-guru berprestasi diselenggarakan untuk menghormati dedikasi dan pengabdian para pendidik. Acara berlangsung meriah dan penuh kehangatan, menunjukkan rasa terima kasih yang mendalam dari siswa dan orang tua.",
+    comments: [{
+      name: "Alumni 2020",
+      text: "Selamat Hari Guru! Kenangan indah bersama bapak/ibu guru.",
+      date: "2024-11-25T15:00:00Z"
+    }]
+  },
+  {
+    id: 10,
+    title: "Program Tahunan 'Jumat Bersih' Digelar Kembali",
+    category: "Umum",
+    date: "2024-05-03",
+    image: "https://placehold.co/600x400/F0E68C/000000?text=Jumat+Bersih",
+    snippet: "Program 'Jumat Bersih' kembali dilaksanakan untuk menjaga kebersihan dan kenyamanan lingkungan sekolah.",
+    content: "Dalam upaya menjaga kebersihan dan menciptakan lingkungan belajar yang nyaman, SMPN 264 Jakarta secara rutin menggelar program 'Jumat Bersih'. Seluruh siswa, guru, dan staf berpartisipasi aktif dalam membersihkan area sekolah. Kegiatan ini tidak hanya bertujuan untuk kebersihan, tetapi juga untuk menumbuhkan rasa tanggung jawab dan kebersamaan di antara warga sekolah. Mari kita jaga kebersihan sekolah kita bersama!",
+    comments: []
+  }
+];
+
+let currentCategory = 'Semua';
+let searchQuery = '';
+
+const newsContainer = document.getElementById('news-container');
+const searchInput = document.getElementById('search-input');
+const categoryFilter = document.getElementById('category-filter');
+const noResultsMessage = document.getElementById('no-results');
+
+// Function to render news articles
+function renderNews() {
+  newsContainer.innerHTML = '';
+  noResultsMessage.classList.add('hidden'); // Hide no results message initially
+
+  const filteredNews = newsData.filter(news => {
+    const matchesCategory = (currentCategory === 'Semua' || news.category === currentCategory);
+    const matchesSearch = news.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      news.content.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesCategory && matchesSearch;
+  });
+
+  if (filteredNews.length === 0) {
+    noResultsMessage.classList.remove('hidden'); // Show no results message
+    return;
+  }
+
+  filteredNews.forEach(news => {
+    const newsCardCol = document.createElement('div');
+    newsCardCol.className = 'col'; // Bootstrap column class for grid layout
+
+    const newsCard = document.createElement('div');
+    newsCard.className = 'news-card card h-100 shadow-sm'; // Bootstrap card classes
+    newsCard.innerHTML = `
+        <img src="${news.image}" class="card-img-top" alt="${news.title}" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Gambar+Tidak+Tersedia';">
+        <div class="card-body d-flex flex-column">
+            <span class="badge bg-primary text-white mb-2 align-self-start">${news.category}</span>
+            <h5 class="card-title fw-semibold">${news.title}</h5>
+            <p class="card-subtitle text-muted mb-3">${new Date(news.date).toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+            <p class="card-text news-snippet flex-grow-1">${news.snippet}</p>
+            <p class="card-text news-full-content hidden flex-grow-1">${news.content}</p>
+            <div class="comments-section hidden mt-3">
+                <h6 class="fw-bold mb-2">Komentar:</h6>
+                <div class="comments-list mb-3">
+                    <!-- Comments will be rendered here by renderComments() -->
+                </div>
+                <div class="add-comment-form">
+                    <h6 class="fw-bold mb-2">Tambahkan Komentar:</h6>
+                    <div class="mb-2">
+                        <input type="text" class="form-control form-control-sm comment-name-input" placeholder="Nama Anda">
+                    </div>
+                    <div class="mb-2">
+                        <textarea class="form-control form-control-sm comment-text-input" rows="2" placeholder="Tulis komentar Anda..."></textarea>
+                    </div>
+                    <button class="btn btn-primary btn-sm add-comment-btn" data-news-id="${news.id}">Kirim Komentar</button>
+                    <p class="error-message text-danger small mt-2 hidden"></p>
+                </div>
+            </div>
+            <button class="read-more-btn btn btn-link p-0 text-decoration-none text-primary align-self-start" data-id="${news.id}">Baca Selengkapnya</button>
+        </div>
+    `;
+    newsCardCol.appendChild(newsCard);
+    newsContainer.appendChild(newsCardCol);
+  });
+
+  // Add event listeners for "Baca Selengkapnya" buttons
+  document.querySelectorAll('.read-more-btn').forEach(button => {
+    button.addEventListener('click', (event) => {
+      const cardBody = event.target.closest('.card-body');
+      const snippet = cardBody.querySelector('.news-snippet');
+      const fullContent = cardBody.querySelector('.news-full-content');
+      const commentsSection = cardBody.querySelector('.comments-section');
+      const newsId = parseInt(event.target.dataset.id);
+
+      if (snippet.classList.contains('hidden')) {
+        // Currently showing full content and comments, switch to snippet
+        snippet.classList.remove('hidden');
+        fullContent.classList.add('hidden');
+        commentsSection.classList.add('hidden');
+        event.target.textContent = 'Baca Selengkapnya';
+      } else {
+        // Currently showing snippet, switch to full content and comments
+        snippet.classList.add('hidden');
+        fullContent.classList.remove('hidden');
+        commentsSection.classList.remove('hidden');
+        event.target.textContent = 'Sembunyikan';
+        renderComments(newsId); // Render comments when full content is shown
+      }
+    });
+  });
+
+  // Add event listeners for "Kirim Komentar" buttons
+  document.querySelectorAll('.add-comment-btn').forEach(button => {
+    button.addEventListener('click', handleAddComment);
+  });
+}
+
+// Function to render comments for a specific news item
+function renderComments(newsId) {
+  const newsItem = newsData.find(item => item.id === newsId);
+  if (!newsItem) return;
+
+  const card = document.querySelector(`.read-more-btn[data-id="${newsId}"]`).closest('.news-card');
+  const commentsListDiv = card.querySelector('.comments-list');
+  commentsListDiv.innerHTML = ''; // Clear existing comments
+
+  if (newsItem.comments && newsItem.comments.length > 0) {
+    newsItem.comments.forEach(comment => {
+      const commentDiv = document.createElement('div');
+      commentDiv.className = 'card card-body p-2 mb-2 comment-card'; // Bootstrap card for comments
+      commentDiv.innerHTML = `
+            <p class="mb-0 small fw-bold">${comment.name} <span class="text-muted fw-normal ms-2">${new Date(comment.date).toLocaleString('id-ID')}</span></p>
+            <p class="mb-0 small">${comment.text}</p>
+        `;
+      commentsListDiv.appendChild(commentDiv);
+    });
+  } else {
+    commentsListDiv.innerHTML = '<p class="text-muted small">Belum ada komentar.</p>';
+  }
+}
+
+// Function to handle adding a new comment
+function handleAddComment(event) {
+  const newsId = parseInt(event.target.dataset.newsId);
+  const cardBody = event.target.closest('.card-body');
+  const nameInput = cardBody.querySelector('.comment-name-input');
+  const textInput = cardBody.querySelector('.comment-text-input');
+  const errorMessageElement = cardBody.querySelector('.error-message');
+
+  const name = nameInput.value.trim();
+  const text = textInput.value.trim();
+
+  errorMessageElement.classList.add('hidden'); // Hide any previous error message
+
+  if (name && text) {
+    const newsItem = newsData.find(item => item.id === newsId);
+    if (newsItem) {
+      if (!newsItem.comments) {
+        newsItem.comments = [];
+      }
+      newsItem.comments.push({
+        name: name,
+        text: text,
+        date: new Date().toISOString() // Use ISO string for consistent date format
+      });
+      renderComments(newsId); // Re-render comments for this news item
+      nameInput.value = ''; // Clear form
+      textInput.value = '';
+    }
+  } else {
+    errorMessageElement.textContent = 'Nama dan komentar tidak boleh kosong.';
+    errorMessageElement.classList.remove('hidden');
+  }
+}
+
+// Event listener for search input
+searchInput.addEventListener('input', (event) => {
+  searchQuery = event.target.value.trim();
+  renderNews();
+});
+
+// Event listener for category filter buttons
+categoryFilter.addEventListener('click', (event) => {
+  if (event.target.classList.contains('category-button')) {
+    // Remove active class from all buttons and revert to light style
+    document.querySelectorAll('.category-button').forEach(btn => {
+      btn.classList.remove('active', 'btn-primary');
+      btn.classList.add('btn-light');
+    });
+
+    // Add active class to the clicked button and apply primary style
+    event.target.classList.add('active', 'btn-primary');
+    event.target.classList.remove('btn-light');
+
+    currentCategory = event.target.dataset.category;
+    renderNews();
+  }
+});
+
+// Initial render of news when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', renderNews);

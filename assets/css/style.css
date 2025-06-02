@@ -2621,3 +2621,191 @@ section {
   max-height: 700px;
   overflow: hidden;
 }
+
+
+/* General body styling */
+body {
+  background-color: #f8f9fa;
+  /* Light gray background */
+  color: #343a40;
+  /* Darker text color */
+}
+
+/* Header specific styling */
+header {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  /* Rounded corners */
+  padding: 1.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  /* Subtle shadow */
+}
+
+/* Sidebar specific styling */
+aside div {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* News Card Styling */
+.news-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 0.5rem;
+  /* Rounded corners for cards */
+  overflow: hidden;
+  /* Ensures image corners are also rounded */
+  height: 100%;
+  /* Ensure cards in a row have equal height */
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  /* More pronounced shadow on hover */
+}
+
+.news-card img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  height: 200px;
+  /* Fixed height for images */
+  object-fit: cover;
+  /* Ensures images cover the area without distortion */
+}
+
+.news-card .card-body {
+  flex-grow: 1;
+  /* Allows card body to take available space */
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card .card-text.news-snippet {
+  margin-bottom: 1rem;
+}
+
+.news-card .card-text.news-full-content {
+  margin-bottom: 1rem;
+}
+
+/* Read More Button Styling */
+.read-more-btn {
+  cursor: pointer;
+  font-weight: 500;
+  align-self: flex-start;
+  /* Aligns button to the start of the card */
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
+}
+
+/* Category Buttons Styling */
+.category-button {
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  white-space: nowrap;
+  /* Prevent buttons from wrapping text */
+}
+
+.category-button.active {
+  background-color: #007bff !important;
+  /* Bootstrap primary blue */
+  color: white !important;
+  border-color: #007bff !important;
+}
+
+.category-button:not(.active) {
+  background-color: #e9ecef !important;
+  /* Light gray for inactive */
+  color: #495057 !important;
+  /* Darker text */
+  border-color: #e9ecef !important;
+}
+
+/* Hidden utility class */
+.hidden {
+  display: none !important;
+}
+
+/* No results message */
+#no-results {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* Comments Section Styling */
+.comments-section {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.comments-list {
+  max-height: 200px;
+  /* Limit height for scrollable comments */
+  overflow-y: auto;
+  /* Enable scrolling */
+  padding-right: 5px;
+  /* Space for scrollbar */
+}
+
+.comments-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.comments-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.comments-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.comments-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.comment-card {
+  background-color: #f8f9fa;
+  /* Lighter background for individual comments */
+  border: 1px solid #dee2e6;
+  border-radius: 0.3rem;
+}
+
+/* Carousel specific styling */
+#newsCarousel .carousel-item img {
+  object-fit: cover;
+  height: 400px;
+  /* Adjust as needed */
+  width: 100%;
+}
+
+#newsCarousel .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Semi-transparent background for text */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  bottom: 20px;
+  /* Adjust vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  /* Adjust width as needed */
+  max-width: 800px;
+  /* Max width for larger screens */
+}
+
+#newsCarousel .carousel-caption h5 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+#newsCarousel .carousel-caption p {
+  font-size: 1rem;
+}
