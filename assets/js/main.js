@@ -281,12 +281,12 @@
 // Each news item now includes a 'comments' array
 const newsData = [{
     id: 1,
-    title: "Pendaftaran Siswa Baru Tahun Ajaran 2024/2025 Dibuka!",
+    title: "Penerimaan Peserta Didik Baru (PPDB) SMPN 264 Jakarta Tahun Ajaran 2024 / 2025 ",
     category: "Pengumuman",
     date: "2024-05-30",
-    image: "https://placehold.co/600x400/ADD8E6/000000?text=Pendaftaran",
-    snippet: "SMPN 264 Jakarta dengan bangga mengumumkan pembukaan pendaftaran siswa baru untuk tahun ajaran 2024/2025. Segera daftarkan putra-putri Anda!",
-    content: "Pendaftaran siswa baru di SMPN 264 Jakarta untuk tahun ajaran 2024/2025 telah resmi dibuka. Kami mengundang calon siswa dan orang tua untuk mengunjungi situs web sekolah kami atau datang langsung ke sekretariat pendaftaran. Berbagai program unggulan dan fasilitas modern siap mendukung perkembangan akademik dan non-akademik siswa. Jangan lewatkan kesempatan ini untuk bergabung dengan keluarga besar SMPN 264 Jakarta! Detail lengkap mengenai persyaratan dan jadwal dapat ditemukan di halaman PSB kami.",
+    image: "assets/img/berita/pengumuman1.png",
+    snippet: "Proses Penerimaan Peserta Didik Baru (PPDB) untuk tahun ajaran 2024/2025 di SMPN 264 Jakarta telah dimulai",
+    content: "Menandai babak baru bagi calon siswa-siswi yang ingin melanjutkan pendidikan di salah satu sekolah menengah pertama favorit di Jakarta. Sosialisasi dan persiapan PPDB ini menjadi fokus utama dalam memastikan kelancaran dan transparansi proses seleksi. Sebagaimana terlihat dalam sebuah kegiatan yang kemungkinan merupakan bagian dari sosialisasi PPDB, para staf pengajar dan panitia tampak aktif terlibat dalam memberikan informasi kepada masyarakat.",
     comments: [{
         name: "Budi Santoso",
         text: "Berita yang sangat informatif! Terima kasih.",
@@ -294,99 +294,90 @@ const newsData = [{
       },
       {
         name: "Siti Aminah",
-        text: "Semoga pendaftaran berjalan lancar.",
+        text: "Semoga penerimaan berjalan lancar.",
         date: "2024-06-01T11:30:00Z"
       }
     ]
   },
   {
     id: 2,
-    title: "Perlombaan Sains Tingkat Kota Berlangsung Sukses",
+    title: "Penghargaan Perlombaan Literasi dan Numerasi Mendapat Peringkat 1",
     category: "Prestasi",
-    date: "2024-05-28",
-    image: "https://placehold.co/600x400/90EE90/000000?text=Sains",
-    snippet: "Siswa-siswi SMPN 264 Jakarta menunjukkan performa luar biasa dalam perlombaan sains tingkat kota, meraih beberapa penghargaan.",
-    content: "Perlombaan Sains Tingkat Kota yang diadakan minggu lalu menjadi ajang pembuktian bagi bakat-bakat muda dari SMPN 264 Jakarta. Tim perwakilan sekolah berhasil meraih juara 1 dalam kategori Fisika dan juara 3 dalam kategori Biologi. Prestasi ini merupakan hasil kerja keras dan dedikasi siswa serta bimbingan dari guru-guru pembimbing. Selamat kepada para pemenang! Kami berharap mereka dapat terus menginspirasi siswa lain.",
+    date: "2024-04-01",
+    image: "assets/img/berita/prestasi1.jpg",
+    snippet: "Hawa Sucita, Siswi SMPN 264 Jakarta, Sabet Peringkat 1 Kompetisi Literasi dan Numerasi Se-Jakarta Barat",
+    content: "Kabar gembira datang dari dunia pendidikan Jakarta Barat. Hawa Sucita, siswi berbakat dari SMPN 264 Jakarta, berhasil menorehkan prestasi gemilang dengan meraih peringkat pertama dalam Kompetisi Literasi dan Numerasi tingkat Jakarta Barat tahun 2024. Prestasi membanggakan ini menunjukkan keunggulan Hawa dalam menguasai kemampuan literasi dan numerasi yang merupakan fondasi penting dalam dunia pendidikan.Kompetisi ini sendiri diselenggarakan dengan tujuan untuk mengasah dan mengukur kemampuan siswa dalam memahami teks, menganalisis data, serta memecahkan masalah matematis.",
     comments: [{
       name: "Guru Pembimbing",
-      text: "Bangga sekali dengan pencapaian anak-anak!",
+      text: "Bangga sekali dengan pencapaianmu nak!",
       date: "2024-06-01T14:00:00Z"
     }]
   },
   {
     id: 3,
-    title: "Kegiatan Ekstrakurikuler Baru: Klub Robotika",
+    title: "Kegiatan MPLS di SMPN 264 Jakarta",
     category: "Kegiatan",
-    date: "2024-05-25",
-    image: "https://placehold.co/600x400/FFD700/000000?text=Robotika",
-    snippet: "SMPN 264 Jakarta meluncurkan klub robotika baru untuk mengembangkan minat siswa dalam teknologi dan rekayasa.",
-    content: "Untuk memperkaya pengalaman belajar siswa, SMPN 264 Jakarta kini resmi meluncurkan klub robotika. Klub ini akan menjadi wadah bagi siswa yang tertarik pada dunia teknologi, pemrograman, dan rekayasa. Dengan bimbingan dari instruktur ahli, siswa akan belajar merancang, membangun, dan memprogram robot. Mari bergabung dan wujudkan ide-ide inovatif Anda! Pendaftaran dibuka setiap hari kerja.",
+    date: "2024-07-11",
+    image: "assets/img/berita/kegiatan1.png",
+    snippet: "MPLS SMPN 264 Jakarta Semarak dengan Tarian Daerah, Sambut Peserta Didik Baru Penuh Semangat.",
+    content: "Masa Pengenalan Lingkungan Sekolah (MPLS) di SMP Negeri 264 Jakarta tahun ajaran 2024-2025 diselenggarakan dengan meriah dan penuh kehangatan. Salah satu sorotan utama dalam kegiatan penyambutan peserta didik baru ini adalah penampilan tarian daerah yang memukau, menunjukkan kekayaan budaya Indonesia.",
     comments: []
   },
   {
     id: 4,
-    title: "Workshop Penulisan Kreatif untuk Siswa Kelas 9",
+    title: "SMPN 264 Jakarta Gelar Ujian Semester Berbasis Komputer,",
     category: "Akademik",
-    date: "2024-05-20",
-    image: "https://placehold.co/600x400/FFB6C1/000000?text=Menulis",
-    snippet: "Workshop intensif diadakan untuk meningkatkan kemampuan menulis kreatif siswa kelas 9, persiapan menghadapi ujian.",
-    content: "Dalam rangka mempersiapkan siswa kelas 9 menghadapi ujian akhir dan mengembangkan potensi menulis mereka, SMPN 264 Jakarta menyelenggarakan workshop penulisan kreatif. Workshop ini menghadirkan penulis profesional yang berbagi tips dan teknik menulis efektif. Diharapkan, kegiatan ini dapat memotivasi siswa untuk lebih mencintai dunia literasi dan meningkatkan nilai ujian mereka.",
+    date: "2024-05-19",
+    image: "assets/img/berita/akademik1.png",
+    snippet: "SMPN 264 Jakarta kembali menunjukkan komitmennya dalam mengadopsi teknologi modern di bidang pendidikan dengan sukses melaksanakan Ujian Semester secara digital ",
+    content: "Implementasi sistem ujian berbasis teknologi ini menjadi langkah strategis sekolah untuk meningkatkan efisiensi proses evaluasi, akurasi penilaian, serta membiasakan siswa dengan lingkungan ujian yang relevan di era digital. Penerapan ujian semester berbasis komputer ini membawa berbagai keunggulan, di antaranya adalah efisiensi waktu dalam distribusi soal dan pengumpulan jawaban, serta akurasi yang lebih tinggi dalam proses penilaian. Selain itu, langkah ini juga berkontribusi pada upaya sekolah untuk mengurangi penggunaan kertas dan mendukung program ramah lingkungan.",
     comments: [{
       name: "Orang Tua Siswa",
-      text: "Acara yang sangat bermanfaat untuk anak-anak.",
+      text: "Semoga yang ikut ujian lulu semua, aamiin",
       date: "2024-05-21T09:00:00Z"
     }]
   },
   {
     id: 5,
-    title: "Pengumuman Libur Hari Raya Idul Adha",
-    category: "Pengumuman",
-    date: "2024-06-10",
-    image: "https://placehold.co/600x400/DDA0DD/000000?text=Libur",
-    snippet: "Sekolah akan diliburkan pada tanggal 17-18 Juni 2024 dalam rangka Hari Raya Idul Adha.",
-    content: "Diberitahukan kepada seluruh siswa, guru, dan staf SMPN 264 Jakarta bahwa kegiatan belajar mengajar akan diliburkan pada tanggal 17 dan 18 Juni 2024 dalam rangka memperingati Hari Raya Idul Adha 1445 H. Kegiatan sekolah akan kembali normal pada tanggal 19 Juni 2024. Selamat merayakan Idul Adha bagi yang merayakan. Mohon diperhatikan jadwal ini.",
+    title: "SMPN 264 Jakarta Terapkan Ujian Mid Semester Berbasis Ponsel ",
+    category: "Akademik",
+    date: "2024-09-27",
+    image: "assets/img/berita/akademik2.png",
+    snippet: "SMPN 264 Jakarta kembali berinovasi dalam pelaksanaan evaluasi akademik dengan menggelar Ujian Mid Semester (UTS) yang memanfaatkan perangkat ponsel pintar siswa",
+    content: "Penerapan ujian berbasis ponsel ini merupakan salah satu upaya SMPN 264 Jakarta untuk beradaptasi dengan kemajuan teknologi dan mempersiapkan siswa menghadapi tantangan di masa depan. Metode ini tidak hanya mengurangi penggunaan kertas dan biaya cetak, tetapi juga memberikan pengalaman ujian yang lebih interaktif dan relevan bagi generasi digital.",
     comments: []
   },
   {
     id: 6,
-    title: "Tim Basket Putri Meraih Juara 2 di Turnamen Antar Sekolah",
+    title: "Perwakilan SMPN 264 Jakarta Raih Juara 1 dan 2 di Puncak Perayaan Hari Anak Nasional Tingkat Kota Jakarta Barat 2024 ",
     category: "Prestasi",
-    date: "2024-05-15",
-    image: "https://placehold.co/600x400/B0C4DE/000000?text=Basket",
-    snippet: "Tim basket putri SMPN 264 Jakarta menunjukkan semangat juang tinggi dan berhasil meraih posisi kedua.",
-    content: "Tim basket putri SMPN 264 Jakarta kembali menorehkan prestasi gemilang dengan meraih juara 2 dalam Turnamen Basket Antar Sekolah se-Jakarta Selatan. Pertandingan final yang sengit menunjukkan kegigihan dan kerja sama tim yang solid. Kami bangga dengan pencapaian ini dan berharap dapat terus meningkatkan prestasi di masa mendatang. Dukungan dari seluruh warga sekolah sangat berarti.",
+    date: "2024-07-23",
+    image: "assets/img/berita/prestasi2.png",
+    snippet: "SMPN 264 Jakarta kembali mengukir prestasi membanggakan dengan meraih Juara 1 dan Juara 2 dalam ajang perlombaan yang diselenggarakan pada Puncak Perayaan Hari Anak Nasional (HAN) tingkat Kota Jakarta Barat Tahun 2024",
+    content: "Prestasi ganda yang diraih oleh perwakilan SMPN 264 Jakarta ini merupakan bukti nyata dari dedikasi siswa, bimbingan guru, serta dukungan penuh dari pihak sekolah dalam mengembangkan minat dan bakat peserta didik. Keberhasilan ini diharapkan dapat menjadi motivasi bagi seluruh siswa-siswi SMPN 264 Jakarta untuk terus berkarya dan berprestasi di berbagai bidang.",
     comments: [{
-      name: "Pelatih Basket",
-      text: "Luar biasa! Terus berlatih dan raih juara 1!",
-      date: "2024-05-16T18:00:00Z"
+      name: "Bu Anggi",
+      text: "Luar biasa! dan Selamat!",
+      date: "2024-08-16T18:00:00Z"
     }]
   },
   {
     id: 7,
-    title: "Kunjungan Edukasi ke Museum Nasional",
+    title: "Simulasi Pemadaman Kebakaran di SMPN 264 Jakarta ",
     category: "Kegiatan",
-    date: "2024-05-10",
-    image: "https://placehold.co/600x400/C0C0C0/000000?text=Museum",
-    snippet: "Siswa kelas 7 dan 8 melakukan kunjungan edukasi ke Museum Nasional untuk memperkaya pengetahuan sejarah dan budaya.",
-    content: "Sebagai bagian dari program pembelajaran interaktif, siswa kelas 7 dan 8 SMPN 264 Jakarta baru-baru ini mengunjungi Museum Nasional. Kunjungan ini bertujuan untuk memberikan pengalaman belajar langsung tentang sejarah, seni, dan budaya Indonesia. Para siswa sangat antusias mengikuti tur dan sesi diskusi yang diadakan. Kegiatan ini diharapkan dapat menumbuhkan rasa cinta tanah air dan wawasan yang lebih luas.",
+    date: "2024-06-10",
+    image: "assets/img/berita/kegiatan3.png",
+    snippet: "SMPN 264 Jakarta menggelar simulasi pemadaman kebakaran yang melibatkan siswa dan dipandu langsung oleh petugas dari Dinas Pemadam Kebakaran (Damkar).",
+    content: "Kegiatan ini berfokus pada penanganan awal kebocoran gas yang berpotensi menimbulkan api, sebuah skenario yang penting untuk dipahami oleh seluruh warga sekolah. Kegiatan ini bertujuan untuk memberikan pemahaman praktis kepada siswa tentang cara penanganan api kecil, khususnya yang berasal dari kebocoran tabung gas.",
     comments: []
   },
+
   {
     id: 8,
-    title: "Jadwal Ujian Akhir Semester Genap",
-    category: "Akademik",
-    date: "2024-06-05",
-    image: "https://placehold.co/600x400/FFDAB9/000000?text=Ujian",
-    snippet: "Informasi lengkap mengenai jadwal Ujian Akhir Semester (UAS) Genap untuk semua tingkatan kelas.",
-    content: "Diberitahukan kepada seluruh siswa SMPN 264 Jakarta, jadwal Ujian Akhir Semester (UAS) Genap telah dirilis. Ujian akan dilaksanakan mulai tanggal 24 Juni hingga 28 Juni 2024. Mohon persiapkan diri dengan baik dan pastikan untuk memeriksa jadwal yang telah ditempel di papan pengumuman sekolah atau diakses melalui portal siswa. Selamat belajar dan semoga sukses!",
-    comments: []
-  },
-  {
-    id: 9,
     title: "Perayaan Hari Guru Nasional di SMPN 264 Jakarta",
     category: "Kegiatan",
     date: "2024-11-25",
-    image: "assets/img/berita/berita-2.jpeg",
+    image: "assets/img/berita/kegiatan2.png",
     snippet: "SMPN 264 Jakarta merayakan Hari Guru Nasional dengan berbagai kegiatan dan apresiasi untuk para pahlawan tanpa tanda jasa.",
     content: "Pada tanggal 25 November, seluruh warga SMPN 264 Jakarta dengan penuh suka cita merayakan Hari Guru Nasional. Berbagai acara seperti upacara bendera, penampilan seni dari siswa, dan pemberian penghargaan kepada guru-guru berprestasi diselenggarakan untuk menghormati dedikasi dan pengabdian para pendidik. Acara berlangsung meriah dan penuh kehangatan, menunjukkan rasa terima kasih yang mendalam dari siswa dan orang tua.",
     comments: [{
@@ -395,44 +386,55 @@ const newsData = [{
       date: "2024-11-25T15:00:00Z"
     }]
   },
+
   {
-    id: 10,
-    title: "Program Tahunan 'Jumat Bersih' Digelar Kembali",
-    category: "Umum",
-    date: "2024-05-03",
-    image: "https://placehold.co/600x400/F0E68C/000000?text=Jumat+Bersih",
-    snippet: "Program 'Jumat Bersih' kembali dilaksanakan untuk menjaga kebersihan dan kenyamanan lingkungan sekolah.",
-    content: "Dalam upaya menjaga kebersihan dan menciptakan lingkungan belajar yang nyaman, SMPN 264 Jakarta secara rutin menggelar program 'Jumat Bersih'. Seluruh siswa, guru, dan staf berpartisipasi aktif dalam membersihkan area sekolah. Kegiatan ini tidak hanya bertujuan untuk kebersihan, tetapi juga untuk menumbuhkan rasa tanggung jawab dan kebersamaan di antara warga sekolah. Mari kita jaga kebersihan sekolah kita bersama!",
+    id: 9,
+    title: "Pemilihan Ketua Osis 2024/2025 di SMPN 264 Jakarta",
+    category: "Kegiatan",
+    date: "2024-09-05",
+    image: "assets/img/berita/kegiatan4.png",
+    snippet: "Suasana demokratis menyelimuti SMPN 264 Jakarta hari ini dengan digelarnya pemilihan Ketua OSIS untuk periode 2024-2025.",
+    content: "Proses pemilihan yang berlangsung secara langsung dan transparan ini menjadi ajang edukasi bagi siswa-siswi mengenai pentingnya partisipasi dalam menentukan pemimpin. Diharapkan, dengan pemilihan yang demokratis ini, Ketua OSIS terpilih dapat menjalankan amanah dengan baik, membawa perubahan positif, serta menjadi representasi suara siswa dalam memajukan SMPN 264 Jakarta.",
     comments: []
   },
-  {
-    id: 11,
-    title: "Pembukaan Kelas Coding untuk Siswa",
-    category: "Akademik",
-    date: "2025-05-20", // Most recent
-    image: "https://placehold.co/1200x400/AEC6CF/000000?text=Kelas+Coding",
-    snippet: "SMPN 264 Jakarta meluncurkan kelas coding baru untuk mempersiapkan siswa menghadapi era digital.",
-    content: "Merespon perkembangan teknologi yang pesat, SMPN 264 Jakarta dengan bangga membuka kelas coding bagi siswa-siswi. Program ini akan memperkenalkan dasar-dasar pemrograman, logika komputasi, dan pengembangan aplikasi sederhana. Diharapkan, kelas ini dapat membekali siswa dengan keterampilan digital yang relevan dan menumbuhkan minat mereka di bidang teknologi informasi.",
-    comments: []
-  }, {
-    id: 12,
-    title: "Festival Seni dan Budaya Sekolah",
-    category: "Kegiatan",
-    date: "2025-05-15", // Second most recent
-    image: "https://placehold.co/1200x400/FFDAB9/000000?text=Festival+Seni",
-    snippet: "Festival Seni dan Budaya tahunan SMPN 264 Jakarta sukses digelar dengan berbagai penampilan menarik.",
-    content: "SMPN 264 Jakarta kembali menggelar Festival Seni dan Budaya yang meriah. Acara ini menampilkan beragam bakat siswa dalam seni tari, musik, teater, dan pameran karya seni rupa. Festival ini bertujuan untuk mengembangkan kreativitas siswa dan melestarikan budaya lokal. Antusiasme penonton sangat tinggi, menunjukkan dukungan penuh terhadap kegiatan positif ini.",
-    comments: []
-  }, {
-    id: 13,
-    title: "Pengumuman Hasil Ujian Nasional",
-    category: "Pengumuman",
-    date: "2025-05-10", // Third most recent
-    image: "https://placehold.co/1200x400/D8BFD8/000000?text=Hasil+Ujian",
-    snippet: "Hasil Ujian Nasional untuk siswa kelas 9 telah diumumkan. Selamat kepada para siswa yang telah lulus!",
-    content: "Dengan ini diumumkan bahwa hasil Ujian Nasional untuk siswa kelas 9 SMPN 264 Jakarta telah tersedia. Para siswa dapat melihat hasilnya melalui portal sekolah atau datang langsung ke sekolah. Kami mengucapkan selamat kepada seluruh siswa yang telah berhasil menyelesaikan pendidikan di jenjang SMP. Semoga sukses dalam melanjutkan pendidikan ke jenjang yang lebih tinggi.",
-    comments: []
-  }
+  // {
+  //   id: 10,
+  //   title: "Program Tahunan 'Jumat Bersih' Digelar Kembali",
+  //   category: "Umum",
+  //   date: "2024-05-03",
+  //   image: "https://placehold.co/600x400/F0E68C/000000?text=Jumat+Bersih",
+  //   snippet: "Program 'Jumat Bersih' kembali dilaksanakan untuk menjaga kebersihan dan kenyamanan lingkungan sekolah.",
+  //   content: "Dalam upaya menjaga kebersihan dan menciptakan lingkungan belajar yang nyaman, SMPN 264 Jakarta secara rutin menggelar program 'Jumat Bersih'. Seluruh siswa, guru, dan staf berpartisipasi aktif dalam membersihkan area sekolah. Kegiatan ini tidak hanya bertujuan untuk kebersihan, tetapi juga untuk menumbuhkan rasa tanggung jawab dan kebersamaan di antara warga sekolah. Mari kita jaga kebersihan sekolah kita bersama!",
+  //   comments: []
+  // },
+  // {
+  //   id: 11,
+  //   title: "Pembukaan Kelas Coding untuk Siswa",
+  //   category: "Akademik",
+  //   date: "2025-05-20", // Most recent
+  //   image: "https://placehold.co/1200x400/AEC6CF/000000?text=Kelas+Coding",
+  //   snippet: "SMPN 264 Jakarta meluncurkan kelas coding baru untuk mempersiapkan siswa menghadapi era digital.",
+  //   content: "Merespon perkembangan teknologi yang pesat, SMPN 264 Jakarta dengan bangga membuka kelas coding bagi siswa-siswi. Program ini akan memperkenalkan dasar-dasar pemrograman, logika komputasi, dan pengembangan aplikasi sederhana. Diharapkan, kelas ini dapat membekali siswa dengan keterampilan digital yang relevan dan menumbuhkan minat mereka di bidang teknologi informasi.",
+  //   comments: []
+  // }, {
+  //   id: 12,
+  //   title: "Festival Seni dan Budaya Sekolah",
+  //   category: "Kegiatan",
+  //   date: "2025-05-15", // Second most recent
+  //   image: "https://placehold.co/1200x400/FFDAB9/000000?text=Festival+Seni",
+  //   snippet: "Festival Seni dan Budaya tahunan SMPN 264 Jakarta sukses digelar dengan berbagai penampilan menarik.",
+  //   content: "SMPN 264 Jakarta kembali menggelar Festival Seni dan Budaya yang meriah. Acara ini menampilkan beragam bakat siswa dalam seni tari, musik, teater, dan pameran karya seni rupa. Festival ini bertujuan untuk mengembangkan kreativitas siswa dan melestarikan budaya lokal. Antusiasme penonton sangat tinggi, menunjukkan dukungan penuh terhadap kegiatan positif ini.",
+  //   comments: []
+  // }, {
+  //   id: 13,
+  //   title: "Pengumuman Hasil Ujian Nasional",
+  //   category: "Pengumuman",
+  //   date: "2025-05-10", // Third most recent
+  //   image: "https://placehold.co/1200x400/D8BFD8/000000?text=Hasil+Ujian",
+  //   snippet: "Hasil Ujian Nasional untuk siswa kelas 9 telah diumumkan. Selamat kepada para siswa yang telah lulus!",
+  //   content: "Dengan ini diumumkan bahwa hasil Ujian Nasional untuk siswa kelas 9 SMPN 264 Jakarta telah tersedia. Para siswa dapat melihat hasilnya melalui portal sekolah atau datang langsung ke sekolah. Kami mengucapkan selamat kepada seluruh siswa yang telah berhasil menyelesaikan pendidikan di jenjang SMP. Semoga sukses dalam melanjutkan pendidikan ke jenjang yang lebih tinggi.",
+  //   comments: []
+  // }
 ];
 
 let currentCategory = 'Semua';
